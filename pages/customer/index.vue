@@ -54,7 +54,7 @@
           >
             <td class="border border-gray-300 px-6 py-3">{{ item.name }}</td>
             <td class="border border-gray-300 px-6 py-3">{{ item.qty }}</td>
-            <td class="border border-gray-300 px-6 py-3">{{ item.price }}</td>
+            <td class="border border-gray-300 px-6 py-3">{{ item.price + " .-" }}</td>
           </tr>
         
       </tbody>
@@ -76,9 +76,9 @@ const dataProduct = ref({
 
 const customer = ref([]);
 const addToTable = () => {
-  console.log(dataProduct.value.name);
-  console.log(dataProduct.value.qty);
-  console.log(dataProduct.value.price);
+  // console.log(dataProduct.value.name);
+  // console.log(dataProduct.value.qty);
+  // console.log(dataProduct.value.price);
 
   customer.value.push({ ...dataProduct.value });
 
